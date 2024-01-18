@@ -40,7 +40,6 @@ try:
             data = 20*log10( sqrt((data**2)))
             numpyArrayOne=data
             valores = json.dumps(numpyArrayOne, cls=NumpyArrayEncoder)
-            #É preciso passar para Json para meter no adafruit!!!
             valores=valores.split(',')
             for j in range(0,len(valores)):
                 if valores[j]!='-Infinity' and valores[j]!='NaN' and valores[j]!='[NaN': 
